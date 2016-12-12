@@ -1,0 +1,27 @@
+uuid: d54b8234-0d06-4c9e-a1ad-0b34f2056448
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_file
+    - paragraphs.paragraphs_type.downloads
+  module:
+    - file
+id: paragraph.downloads.field_file
+field_name: field_file
+entity_type: paragraph
+bundle: downloads
+label: File
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf docx'
+  max_filesize: '6 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

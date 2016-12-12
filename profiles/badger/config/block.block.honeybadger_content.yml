@@ -1,0 +1,22 @@
+uuid: f7aa1b17-2e45-4c60-bead-579da1afc533
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - honeybadger
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: honeybadger_content
+theme: honeybadger
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

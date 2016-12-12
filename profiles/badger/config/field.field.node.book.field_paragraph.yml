@@ -1,0 +1,58 @@
+uuid: 888884b7-2f3c-4d54-9543-0aa28951a261
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.book
+    - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.downloads
+    - paragraphs.paragraphs_type.multi_column
+    - paragraphs.paragraphs_type.responsive_image
+    - paragraphs.paragraphs_type.simple
+    - paragraphs.paragraphs_type.slideshow
+  module:
+    - entity_reference_revisions
+id: node.book.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: book
+label: Paragraphs
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      banner: banner
+      downloads: downloads
+      multi_column: multi_column
+      responsive_image: responsive_image
+      simple: simple
+      slideshow: slideshow
+    target_bundles_drag_drop:
+      banner:
+        enabled: true
+        weight: 8
+      downloads:
+        enabled: true
+        weight: 9
+      image_and_text:
+        weight: 10
+        enabled: false
+      multi_column:
+        enabled: true
+        weight: 11
+      responsive_image:
+        enabled: true
+        weight: 12
+      simple:
+        enabled: true
+        weight: 13
+      slideshow:
+        enabled: true
+        weight: 14
+field_type: entity_reference_revisions

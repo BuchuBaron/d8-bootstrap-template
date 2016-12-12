@@ -1,0 +1,3 @@
+embed_provider: '//ckeditor.iframe.ly/api/oembed?url={url}&callback={callback}&api_key=78e20c3133559013cf344e'
+_core:
+  default_config_hash: wHgddFra_KkG7ATiHI-Wks4-pkdtvei_fEb0UbgdB9Y

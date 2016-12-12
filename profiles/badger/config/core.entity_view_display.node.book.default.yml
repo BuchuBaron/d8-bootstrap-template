@@ -1,0 +1,28 @@
+uuid: c6ee9316-2cfc-4430-8e0d-4bb198058239
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.book.field_paragraph
+    - node.type.book
+  module:
+    - entity_reference_revisions
+    - user
+_core:
+  default_config_hash: 7UKHHzhlAE0hzKaKG_KHqUXXOp85mAQ1nZTOep8quTc
+id: node.book.default
+targetEntityType: node
+bundle: book
+mode: default
+content:
+  field_paragraph:
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+  links:
+    weight: 101
+hidden: {  }

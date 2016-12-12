@@ -1,0 +1,36 @@
+uuid: 9a41defc-4e10-43c3-92cc-41d8052c6481
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_bg
+field_name: field_bg
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'element--color element--color__blue'
+      label: Blue
+    -
+      value: 'element--color element--color__blue-light'
+      label: 'Light Blue'
+    -
+      value: 'element--color element--color__gray'
+      label: Grey
+    -
+      value: 'element--color element--color__white'
+      label: White
+    -
+      value: 'element--color element--color__yellow'
+      label: Yellow
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

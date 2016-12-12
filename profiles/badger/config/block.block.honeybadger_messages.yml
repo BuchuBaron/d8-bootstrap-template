@@ -1,0 +1,22 @@
+uuid: a7f5b435-2199-4fca-a90a-b9ba9d88465f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - honeybadger
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: honeybadger_messages
+theme: honeybadger
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

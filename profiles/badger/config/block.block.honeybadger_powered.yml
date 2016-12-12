@@ -1,0 +1,22 @@
+uuid: a520dfe5-7b10-4850-af11-91ec917df23c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - honeybadger
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: honeybadger_powered
+theme: honeybadger
+region: footer
+weight: -5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

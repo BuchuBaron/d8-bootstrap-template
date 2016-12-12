@@ -1,0 +1,6 @@
+uuid: 3f507373-4c99-4fce-a86e-08003c276883
+langcode: en
+status: true
+dependencies: {  }
+id: responsive_image
+label: Images

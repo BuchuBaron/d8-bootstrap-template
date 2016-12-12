@@ -1,0 +1,56 @@
+uuid: 01e52ea9-f4b7-48ab-9af0-f9f6d6e794b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slide
+    - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.downloads
+    - paragraphs.paragraphs_type.multi_column
+    - paragraphs.paragraphs_type.responsive_image
+    - paragraphs.paragraphs_type.simple
+    - paragraphs.paragraphs_type.slideshow
+  module:
+    - entity_reference_revisions
+id: paragraph.slideshow.field_slide
+field_name: field_slide
+entity_type: paragraph
+bundle: slideshow
+label: Slide
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      banner: banner
+      multi_column: multi_column
+      downloads: downloads
+      responsive_image: responsive_image
+      simple: simple
+    target_bundles_drag_drop:
+      banner:
+        enabled: true
+        weight: -7
+      image_and_text:
+        weight: -6
+        enabled: false
+      slideshow:
+        weight: -5
+        enabled: false
+      multi_column:
+        enabled: true
+        weight: 9
+      downloads:
+        enabled: true
+        weight: 9
+      responsive_image:
+        enabled: true
+        weight: 10
+      simple:
+        enabled: true
+        weight: 11
+field_type: entity_reference_revisions
