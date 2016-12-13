@@ -4,6 +4,12 @@
  * Modify this file to override the Bootstrap Framework variables. You can copy
  * these variables directly from ../bootstrap/less/variables.less to this file.
  */
+/**
+ * Brand colours and artifacts for a given site/customer.
+ */
+div[role="heading"] {
+  background-color: #9999ff;
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -1087,12 +1093,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #333333;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #0d0d0d;
   text-decoration: underline;
 }
 a:focus {
@@ -1327,11 +1333,11 @@ mark,
   color: #777777;
 }
 .text-primary {
-  color: #337ab7;
+  color: #333333;
 }
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #286090;
+  color: #1a1a1a;
 }
 .text-success {
   color: #3c763d;
@@ -1363,11 +1369,11 @@ a.text-danger:focus {
 }
 .bg-primary {
   color: #fff;
-  background-color: #337ab7;
+  background-color: #333333;
 }
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #286090;
+  background-color: #1a1a1a;
 }
 .bg-success {
   background-color: #dff0d8;
@@ -3102,26 +3108,26 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #333333;
+  border-color: #262626;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #ffffff;
-  background-color: #286090;
-  border-color: #122b40;
+  background-color: #1a1a1a;
+  border-color: #000000;
 }
 .btn-primary:hover {
   color: #ffffff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #1a1a1a;
+  border-color: #080808;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #1a1a1a;
+  border-color: #080808;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -3133,8 +3139,8 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
   color: #ffffff;
-  background-color: #204d74;
-  border-color: #122b40;
+  background-color: #080808;
+  border-color: #000000;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3150,11 +3156,11 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #333333;
+  border-color: #262626;
 }
 .btn-primary .badge {
-  color: #337ab7;
+  color: #333333;
   background-color: #ffffff;
 }
 .btn-success {
@@ -3386,7 +3392,7 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #337ab7;
+  color: #333333;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3407,7 +3413,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #23527c;
+  color: #0d0d0d;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3553,7 +3559,7 @@ tbody.collapse.in {
   color: #ffffff;
   text-decoration: none;
   outline: 0;
-  background-color: #337ab7;
+  background-color: #333333;
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
@@ -3987,7 +3993,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #337ab7;
+  border-color: #333333;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4080,7 +4086,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #ffffff;
-  background-color: #337ab7;
+  background-color: #333333;
 }
 .nav-stacked > li {
   float: none;
@@ -4473,8 +4479,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #9999ff;
+  border-color: #7878ff;
 }
 .navbar-default .navbar-brand {
   color: #777777;
@@ -4499,7 +4505,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #555555;
-  background-color: #e7e7e7;
+  background-color: #7878ff;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4519,12 +4525,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+  border-color: #7878ff;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #e7e7e7;
+  background-color: #7878ff;
   color: #555555;
 }
 @media (max-width: 767px) {
@@ -4540,7 +4546,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555555;
-    background-color: #e7e7e7;
+    background-color: #7878ff;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -4704,7 +4710,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.428571429;
   text-decoration: none;
-  color: #337ab7;
+  color: #333333;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -4725,7 +4731,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #23527c;
+  color: #0d0d0d;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
@@ -4737,8 +4743,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .active > span:focus {
   z-index: 3;
   color: #ffffff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #333333;
+  border-color: #333333;
   cursor: default;
 }
 .pagination > .disabled > span,
@@ -4855,11 +4861,11 @@ a.label:focus {
   background-color: #5e5e5e;
 }
 .label-primary {
-  background-color: #337ab7;
+  background-color: #333333;
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-  background-color: #286090;
+  background-color: #1a1a1a;
 }
 .label-success {
   background-color: #5cb85c;
@@ -4923,7 +4929,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #337ab7;
+  color: #333333;
   background-color: #ffffff;
 }
 .list-group-item > .badge {
@@ -4998,7 +5004,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #337ab7;
+  border-color: #333333;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -5112,7 +5118,7 @@ a.thumbnail.active {
   line-height: 20px;
   color: #ffffff;
   text-align: center;
-  background-color: #337ab7;
+  background-color: #333333;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
@@ -5275,8 +5281,8 @@ button.list-group-item {
 .list-group-item.active:focus {
   z-index: 2;
   color: #ffffff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #333333;
+  border-color: #333333;
 }
 .list-group-item.active .list-group-item-heading,
 .list-group-item.active:hover .list-group-item-heading,
@@ -5292,7 +5298,7 @@ button.list-group-item {
 .list-group-item.active .list-group-item-text,
 .list-group-item.active:hover .list-group-item-text,
 .list-group-item.active:focus .list-group-item-text {
-  color: #c7ddef;
+  color: #999999;
 }
 .list-group-item-success {
   color: #3c763d;
@@ -5672,22 +5678,22 @@ button.list-group-item-danger.active:focus {
   border-bottom-color: #dddddd;
 }
 .panel-primary {
-  border-color: #337ab7;
+  border-color: #333333;
 }
 .panel-primary > .panel-heading {
   color: #ffffff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #333333;
+  border-color: #333333;
 }
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #337ab7;
+  border-top-color: #333333;
 }
 .panel-primary > .panel-heading .badge {
-  color: #337ab7;
+  color: #333333;
   background-color: #ffffff;
 }
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #337ab7;
+  border-bottom-color: #333333;
 }
 .panel-success {
   border-color: #d6e9c6;
@@ -6783,7 +6789,7 @@ html.js .form-item .input-group-addon .glyphicon {
   transition: 150ms color, 150ms opacity;
 }
 html.js .form-item .input-group-addon .glyphicon.glyphicon-spin {
-  color: #337ab7;
+  color: #333333;
   opacity: 1;
 }
 html.js .form-item .input-group-addon .input-group-addon {
@@ -6791,6 +6797,27 @@ html.js .form-item .input-group-addon .input-group-addon {
 }
 html.js .ajax-new-content:empty {
   display: none !important;
+}
+/**
+ * Book styling.
+ */
+table.book-navigation {
+  border: none;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  margin: 30px 0px 0px 0px;
+  width: 100%;
+}
+table.book-navigation td {
+  text-align: center;
+  width: 33.33%;
+  padding: .5em;
+}
+table.book-navigation > td {
+  text-align: left;
+}
+table.book-navigation td:last {
+  text-align: right;
 }
 /**
  * @file
@@ -6830,7 +6857,7 @@ html.js .ajax-new-content:empty {
 }
 .file > span {
   background: #fff;
-  color: #337ab7;
+  color: #333333;
   border-bottom: 1px solid #cccccc;
   border-top: 1px solid #cccccc;
 }
@@ -6941,7 +6968,7 @@ table .radio.form-no-label {
   opacity: 0;
 }
 .select-wrapper:after {
-  color: #337ab7;
+  color: #333333;
   content: '▼';
   font-style: normal;
   font-weight: 400;
@@ -7120,7 +7147,7 @@ body.navbar-is-fixed-bottom {
 }
 .tabledrag-handle:hover,
 .tabledrag-handle:focus {
-  color: #337ab7;
+  color: #333333;
 }
 .indentation {
   float: left;
@@ -7325,7 +7352,7 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tra
 }
 .ui-autocomplete .ui-menu-item.ui-state-active,
 .ui-autocomplete .ui-menu-item.ui-state-focus {
-  background: #337ab7;
+  background: #333333;
   color: #ffffff;
 }
 /* -------------------------------------------------------------------------- */
@@ -7593,6 +7620,10 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tra
     float: left;
     width: 100%;
   }
+}
+td,
+th {
+  padding: .5em;
 }
 ol,
 ul {

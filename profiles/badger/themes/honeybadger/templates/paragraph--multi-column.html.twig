@@ -1,3 +1,9 @@
-<div class="element element--layout-columns">
-  {{ content }}
+{% set classes = [
+  'element',
+  'element--layout-columns',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  content.field_bg ? content.field_bg[0]['#markup'],
+] %}
+<div{{ attributes.addClass(classes) }}>
+  {{ content|without('field_bg') }}
 </div>
