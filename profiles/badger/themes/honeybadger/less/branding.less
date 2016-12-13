@@ -1,11 +1,22 @@
 /**
  * Brand colours and artifacts for a given site/customer.
  */
-@navbar-default-bg:                #9999ff;
-@brand-primary:                    #333333;
-@brand-secondary:                  #ff0000;
+@brand-primary:                    #015249;
+@brand-secondary:                  #578c90;
+@brand-tertiary:                   #77c9d4;
+@brand-quaternary:                 #a5a5af;
+
+// Overrides from bootstrap.
+@brand-success:         @brand-secondary;
+@brand-info:            @brand-tertiary;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
 
 // Branding colour assignments.
 div[role="heading"] {
-  background-color: @navbar-default-bg;
+  background-color: @brand-primary;
+  color: contrast(@brand-primary);
+}
+div[role="heading"] a {
+  color: white;
 }
