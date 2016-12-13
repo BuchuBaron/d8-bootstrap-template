@@ -1,0 +1,23 @@
+uuid: 1a873083-3008-4727-9ba8-e6cded14784b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: nonbooks
+label: Default
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  c6a8835d-0e21-47bd-8d8d-2d2f7310250c:
+    id: node_type
+    bundles:
+      article: article
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: c6a8835d-0e21-47bd-8d8d-2d2f7310250c
+selection_logic: and
+weight: -5
+relationships: {  }

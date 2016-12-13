@@ -9,7 +9,7 @@ _core:
 id: honeybadger_local_tasks
 theme: honeybadger
 region: content
-weight: -5
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:
