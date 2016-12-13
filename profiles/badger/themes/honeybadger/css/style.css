@@ -7670,3 +7670,7 @@ p:last-child,
 .control-group .help-inline:first-child {
   margin-top: 0;
 }
+.navbar-brand {
+  padding-top: 25px;
+  font-size: 3em;
+}
