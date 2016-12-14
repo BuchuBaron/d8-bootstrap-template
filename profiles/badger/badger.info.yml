@@ -9,6 +9,7 @@ dependencies:
   - node
   - history
   - block
+  - book
   - breakpoint
   - ckeditor
   - color
@@ -23,6 +24,7 @@ dependencies:
   - editor
   - help
   - image
+  - responsive_image
   - menu_ui
   - options
   - path
@@ -42,13 +44,15 @@ dependencies:
   - automated_cron
   # Contrib modules
   - entity_reference_revisions
+  - file_entity
   - paragraphs
   - color_field
-  - responsive_image
+  - pathauto
   # Custom
 themes:
   - honeybadger
   - seven
+  - bartik
 
 # Information added by Drupal.org packaging script on 2016-11-16
 version: '8.2.3'
