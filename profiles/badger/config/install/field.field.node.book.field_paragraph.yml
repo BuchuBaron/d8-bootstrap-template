@@ -13,6 +13,8 @@ dependencies:
     - paragraphs.paragraphs_type.slideshow
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: GSmbDXDskp_2lp0M7l3bi3dI7tZzCcIIAKICw_aKND8
 id: node.book.field_paragraph
 field_name: field_paragraph
 entity_type: node

@@ -10,8 +10,8 @@ _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
 id: honeybadger_branding
 theme: honeybadger
-region: navigation
-weight: -7
+region: header
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:

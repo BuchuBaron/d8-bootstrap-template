@@ -1,0 +1,26 @@
+uuid: 2b9b479a-f9fb-44d8-9fd8-f2ca0d012d2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner.field_banner_image
+    - paragraphs.paragraphs_type.banner
+    - responsive_image.styles.responsive_banner
+  module:
+    - responsive_image
+id: paragraph.banner.default
+targetEntityType: paragraph
+bundle: banner
+mode: default
+content:
+  field_banner_image:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: responsive_banner
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+hidden:
+  created: true
+  uid: true

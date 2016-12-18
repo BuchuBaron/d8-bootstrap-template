@@ -13,7 +13,7 @@ third_party_settings:
       - main
     parent: 'main:'
 _core:
-  default_config_hash: G08LGnTaTDmsZpGRTQL42XTHr4Ek2m4gkdG-GF8g710
+  default_config_hash: 88JDWBhhmEGbZ8n-O-5Jx3JbF9MUw3cWPNZbc2yocLU
 name: 'Book page'
 type: book
 description: '<em>Books</em> have a built-in hierarchical navigation. Use for handbooks or tutorials.'

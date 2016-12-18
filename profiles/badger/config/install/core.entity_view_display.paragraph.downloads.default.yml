@@ -1,0 +1,31 @@
+uuid: 8fccabba-b3e6-496b-8478-1cfb2595319c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.downloads.field_bg
+    - field.field.paragraph.downloads.field_file
+    - paragraphs.paragraphs_type.downloads
+  module:
+    - file
+    - options
+id: paragraph.downloads.default
+targetEntityType: paragraph
+bundle: downloads
+mode: default
+content:
+  field_bg:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+  field_file:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+hidden:
+  created: true
+  uid: true
