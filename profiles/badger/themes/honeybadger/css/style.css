@@ -7666,6 +7666,7 @@ th {
 }
 .paragraph--type--title {
   padding: .1em .5em;
+  margin-top: 2em;
   width: 100%;
 }
 ol,
@@ -7721,4 +7722,7 @@ p:last-child,
 }
 .navbar-brand {
   font-size: 2em;
+}
+.navbar {
+  margin-bottom: 0;
 }
