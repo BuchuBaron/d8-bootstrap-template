@@ -1,0 +1,17 @@
+palette:
+  base: '#3498db'
+  header_link: '#fefefe'
+  sitename: '#fdfdfd'
+  headings: '#333333'
+  link: '#2f8dcc'
+  text: '#1f2126'
+  body_bg: '#fbfbfb'
+  footer_text: '#fcfcfc'
+  footer_bg: '#2980b9'
+  borders: '#dddddd'
+logo: 'public://color/mbase-5544dacf/logo.svg'
+stylesheets:
+  - 'public://color/mbase-5544dacf/colors.css'
+files:
+  - 'public://color/mbase-5544dacf/logo.svg'
+  - 'public://color/mbase-5544dacf/colors.css'

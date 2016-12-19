@@ -1,0 +1,20 @@
+uuid: c88aaca1-2fdd-459f-996f-76a43f236204
+langcode: en
+status: true
+dependencies:
+  theme:
+    - honeybadger
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: honeybadger_local_actions
+theme: honeybadger
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

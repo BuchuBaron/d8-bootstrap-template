@@ -1,0 +1,62 @@
+uuid: 546cc5a3-d7fe-42c3-b928-8d46f63620a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs
+    - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.downloads
+    - paragraphs.paragraphs_type.multi_column
+    - paragraphs.paragraphs_type.responsive_image
+    - paragraphs.paragraphs_type.simple
+    - paragraphs.paragraphs_type.slideshow
+    - paragraphs.paragraphs_type.title
+  module:
+    - entity_reference_revisions
+id: paragraph.multi_column.field_paragraphs
+field_name: field_paragraphs
+entity_type: paragraph
+bundle: multi_column
+label: paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      banner: banner
+      multi_column: multi_column
+      downloads: downloads
+      responsive_image: responsive_image
+      simple: simple
+      slideshow: slideshow
+      title: title
+    target_bundles_drag_drop:
+      banner:
+        enabled: true
+        weight: 7
+      image_and_text:
+        weight: 8
+        enabled: false
+      multi_column:
+        enabled: true
+        weight: 9
+      downloads:
+        enabled: true
+        weight: 9
+      responsive_image:
+        enabled: true
+        weight: 10
+      simple:
+        enabled: true
+        weight: 11
+      slideshow:
+        enabled: true
+        weight: 12
+      title:
+        enabled: true
+        weight: 16
+field_type: entity_reference_revisions

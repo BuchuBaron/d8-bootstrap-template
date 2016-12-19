@@ -1,0 +1,23 @@
+uuid: e0e3f9fa-bef1-41b2-a11f-b2d8582bc949
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.banner1400
+    - image.style.banner560
+    - image.style.banner980
+id: responsive_banner
+label: 'Responsive Banner'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - banner1400
+        - banner560
+        - banner980
+breakpoint_group: responsive_image
+fallback_image_style: banner980

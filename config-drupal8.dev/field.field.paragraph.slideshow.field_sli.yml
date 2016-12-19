@@ -1,0 +1,21 @@
+uuid: 3c6f52c8-dbb7-4752-9fd1-8924c89bb284
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sli
+    - paragraphs.paragraphs_type.slideshow
+  module:
+    - options
+id: paragraph.slideshow.field_sli
+field_name: field_sli
+entity_type: paragraph
+bundle: slideshow
+label: 'Carousel Speed'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
