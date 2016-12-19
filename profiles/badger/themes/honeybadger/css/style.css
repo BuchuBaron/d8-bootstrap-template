@@ -14,20 +14,40 @@ div[role="heading"] {
 div[role="heading"] a {
   color: white;
 }
-.element--color.element--color__blue {
+.element--color-brand_primary {
+  background-color: #015249;
+  color: #ffffff;
+}
+.element--color-brand_secondary {
+  background-color: #578c90;
+  color: #000000;
+}
+.element--color-brand_tertiary {
+  background-color: #77c9d4;
+  color: #000000;
+}
+.element--color-brand_quaternary {
+  background-color: #a5a5af;
+  color: #000000;
+}
+.element--color__blue {
   background-color: blue;
+  color: #ffffff;
 }
-.element--color.element--color__blue-light {
+.element--color__blue-light {
   background-color: light blue;
+  color: contrast(light #0000ff);
 }
-.element--color.element--color__gray {
+.element--color__gray {
   background-color: gray;
+  color: #000000;
 }
-.element--color.element--color__white {
+.element--color__white {
   background-color: white;
 }
-.element--color.element--color__yellow {
+.element--color__yellow {
   background-color: yellow;
+  color: #000000;
 }
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -7644,6 +7664,10 @@ td,
 th {
   padding: .5em;
 }
+.paragraph--type--title {
+  padding: .1em .5em;
+  width: 100%;
+}
 ol,
 ul {
   padding-left: 1.5em;
@@ -7652,8 +7676,18 @@ ul {
 .popover ul:last-child {
   margin-bottom: 0;
 }
+div[role="heading"] {
+  z-index: 2000;
+}
 .page-header {
   margin-top: 0;
+}
+section.col-sm-12 {
+  max-width: 840px;
+  background-color: whitesmoke;
+}
+div[role=main] > div.row {
+  background: #015249 url(../images/main_bg.jpg) no-repeat fixed top right;
 }
 .footer {
   margin-top: 45px;

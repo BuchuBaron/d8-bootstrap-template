@@ -34,8 +34,20 @@ ol, ul {
 }
 
 // Page header.
+div[role="heading"] {
+  z-index: 2000;
+}
 .page-header {
   margin-top: 0;
+}
+
+// Content and Background Image.
+section.col-sm-12 {
+  max-width: 840px;
+  background-color: whitesmoke;
+}
+div[role=main]>div.row {
+  background: @brand-primary url(../images/main_bg.jpg) no-repeat fixed top right; 
 }
 
 // Footer.
