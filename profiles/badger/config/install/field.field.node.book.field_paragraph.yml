@@ -11,10 +11,9 @@ dependencies:
     - paragraphs.paragraphs_type.responsive_image
     - paragraphs.paragraphs_type.simple
     - paragraphs.paragraphs_type.slideshow
+    - paragraphs.paragraphs_type.title
   module:
     - entity_reference_revisions
-_core:
-  default_config_hash: GSmbDXDskp_2lp0M7l3bi3dI7tZzCcIIAKICw_aKND8
 id: node.book.field_paragraph
 field_name: field_paragraph
 entity_type: node
@@ -29,6 +28,7 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
+      title: title
       banner: banner
       downloads: downloads
       multi_column: multi_column
@@ -36,25 +36,28 @@ settings:
       simple: simple
       slideshow: slideshow
     target_bundles_drag_drop:
+      title:
+        enabled: true
+        weight: -17
       banner:
         enabled: true
-        weight: 8
+        weight: -16
       downloads:
         enabled: true
-        weight: 9
+        weight: -15
       image_and_text:
-        weight: 10
+        weight: -14
         enabled: false
       multi_column:
         enabled: true
-        weight: 11
+        weight: -13
       responsive_image:
         enabled: true
-        weight: 12
+        weight: -12
       simple:
         enabled: true
-        weight: 13
+        weight: -11
       slideshow:
         enabled: true
-        weight: 14
+        weight: -10
 field_type: entity_reference_revisions

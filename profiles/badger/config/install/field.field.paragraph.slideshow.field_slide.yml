@@ -10,6 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.responsive_image
     - paragraphs.paragraphs_type.simple
     - paragraphs.paragraphs_type.slideshow
+    - paragraphs.paragraphs_type.title
   module:
     - entity_reference_revisions
 id: paragraph.slideshow.field_slide
@@ -31,6 +32,7 @@ settings:
       downloads: downloads
       responsive_image: responsive_image
       simple: simple
+      title: title
     target_bundles_drag_drop:
       banner:
         enabled: true
@@ -53,4 +55,7 @@ settings:
       simple:
         enabled: true
         weight: 11
+      title:
+        enabled: true
+        weight: 16
 field_type: entity_reference_revisions
