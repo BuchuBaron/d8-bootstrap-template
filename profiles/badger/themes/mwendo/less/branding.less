@@ -1,0 +1,22 @@
+/**
+ * Brand colours and artifacts for a given site/customer.
+ */
+@brand-primary:                    #015249;
+@brand-secondary:                  #578c90;
+@brand-tertiary:                   #77c9d4;
+@brand-quaternary:                 #a5a5af;
+
+// Overrides from bootstrap.
+@brand-success:         @brand-secondary;
+@brand-info:            @brand-tertiary;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+
+// Branding colour assignments.
+div[role="heading"] {
+  background-color: @brand-primary;
+  color: contrast(@brand-primary);
+}
+div[role="heading"] a {
+  color: white;
+}

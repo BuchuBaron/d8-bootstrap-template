@@ -1,0 +1,46 @@
+/* -------------------------------------------------------------------------- */
+/* Base Paragraph Styling.  This is the BEM Block */
+/* -------------------------------------------------------------------------- */
+
+.element {
+  margin-left: 0;
+  width: 100%;
+  padding-top: @jumbotron-padding;
+  .make-sm-column(10);
+  .make-sm-column-offset(1);
+  .make-md-column(8);
+  .make-md-column-offset(2);
+  .make-lg-column(6);
+  .make-lg-column-offset(3);
+}
+
+.element:last-of-type {
+  padding-bottom: @jumbotron-padding;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Lets Nest elements in Multicolumns and Slideshows */
+/* -------------------------------------------------------------------------- */
+
+/* Resets Base Paragraph Styling for Nested Paragraphs */
+.element .element,
+.element .element .element {
+  float: none;
+  margin-left: 0;
+  padding: 0;
+  width: auto;
+}
+
+/* Removes Padding on Multicolumn Element (Padding is on columns inside) */
+.element.element--layout-columns {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Multicolumn Modifiers inside of Multicolumn Element  */
+.element--layout-columns__6col,
+.element--layout-columns__5col {.make-sm-column(2);}
+.element--layout-columns__4col {.make-sm-column(3);}
+.element--layout-columns__3col {.make-sm-column(4);}
+.element--layout-columns__2col {.make-sm-column(6);}
+.element--layout-columns__1col {.make-sm-column(12);}

@@ -1,0 +1,53 @@
+/* -------------------------------------------------------------------------- */
+/* Extends:                                                                   */
+/* https://gist.github.com/thejimbirch/5b6b9ceb6e597a48f330e02edd8bcb49       */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* Here we add Width Modifiers                                                */
+/* -------------------------------------------------------------------------- */
+
+/* Adds Width Element -- Medium */
+.element.element-width--medium {
+  .make-sm-column(8);
+  .make-sm-column-offset(2);
+  .make-md-column(8);
+  .make-md-column-offset(2);
+  .make-lg-column(8);
+  .make-lg-column-offset(2);
+}
+
+/* Adds Width Element -- Wide */
+.element.element-width--wide {
+  .make-sm-column(10);
+  .make-sm-column-offset(1);
+  .make-md-column(10);
+  .make-md-column-offset(1);
+  .make-lg-column(10);
+  .make-lg-column-offset(1);
+}
+
+/* Adds Width Element -- Full */
+.element.element-width--full {
+  .make-sm-column(12);
+  .make-md-column(12);
+  .make-lg-column(12);
+  margin-left: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Here we add Colors! */
+/* -------------------------------------------------------------------------- */
+
+.element.element--color {padding-top: @jumbotron-padding;}
+.element.element--color.element--color__blue {background: #00a1cf;}
+.element.element--color.element--color__blue-light {background: #c6e2ea;}
+.element.element--color.element--color__gray {background: #f0efef;}
+.element.element--color.element--color__white {background: #fff;}
+.element.element--color.element--color__yellow {background: #ffd400;}
+
+/* If 2 of the same colors are in a row, this removes the top padding so there
+   isn't twice as much padding as normal */
+.element.element--color + .element.element--color {
+  padding-top: none;
+}
