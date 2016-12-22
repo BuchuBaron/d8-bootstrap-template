@@ -37,9 +37,6 @@ settings:
       banner:
         enabled: true
         weight: -7
-      image_and_text:
-        weight: -6
-        enabled: false
       slideshow:
         weight: -5
         enabled: false

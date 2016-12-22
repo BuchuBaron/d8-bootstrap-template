@@ -36,9 +36,6 @@ settings:
       simple: simple
       slideshow: slideshow
     target_bundles_drag_drop:
-      image_and_text:
-        weight: -17
-        enabled: false
       title:
         enabled: true
         weight: -16

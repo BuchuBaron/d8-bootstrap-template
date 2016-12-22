@@ -45,9 +45,6 @@ settings:
       downloads:
         enabled: true
         weight: -15
-      image_and_text:
-        weight: -14
-        enabled: false
       multi_column:
         enabled: true
         weight: -13

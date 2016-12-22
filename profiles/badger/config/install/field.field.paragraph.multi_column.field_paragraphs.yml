@@ -38,9 +38,6 @@ settings:
       banner:
         enabled: true
         weight: 7
-      image_and_text:
-        weight: 8
-        enabled: false
       multi_column:
         enabled: true
         weight: 9
