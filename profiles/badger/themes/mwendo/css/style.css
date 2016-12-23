@@ -14,6 +14,41 @@ div[role="heading"] {
 div[role="heading"] a {
   color: white;
 }
+.element--color-brand_primary {
+  background-color: #155765;
+  color: #ffffff;
+}
+.element--color-brand_secondary {
+  background-color: #57652a;
+  color: #ffffff;
+}
+.element--color-brand_tertiary {
+  background-color: #ab9353;
+  color: #000000;
+}
+.element--color-brand_quaternary {
+  background-color: #4d2c3d;
+  color: #ffffff;
+}
+.element--color__blue {
+  background-color: blue;
+  color: #ffffff;
+}
+.element--color__blue-light {
+  background-color: light blue;
+  color: contrast(light #0000ff);
+}
+.element--color__gray {
+  background-color: gray;
+  color: #000000;
+}
+.element--color__white {
+  background-color: white;
+}
+.element--color__yellow {
+  background-color: yellow;
+  color: #000000;
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
