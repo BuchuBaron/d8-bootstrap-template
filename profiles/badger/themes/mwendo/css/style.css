@@ -7660,6 +7660,12 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tra
     width: 100%;
   }
 }
+/* -------------------------------------------------------------------------- */
+/* Adjust title paragraph styling.                                            */
+/* -------------------------------------------------------------------------- */
+.paragraph--type--title {
+  clear: both;
+}
 td,
 th {
   padding: .5em;
