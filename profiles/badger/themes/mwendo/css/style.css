@@ -7597,6 +7597,9 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tra
   padding-left: 0;
   padding-right: 0;
 }
+.element.element--layout-columns > field--item {
+  clear: both;
+}
 /* Multicolumn Modifiers inside of Multicolumn Element  */
 .element--layout-columns__6col,
 .element--layout-columns__5col {
