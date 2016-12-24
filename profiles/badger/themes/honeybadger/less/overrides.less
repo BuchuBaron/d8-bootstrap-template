@@ -22,6 +22,8 @@
 // Custom classes
 @import "paragraph-width-and-colour.less";
 @import "multi-column-paragraphs.less";
+@import "paragraph-title.less";
+@import "paragraph-text.less";
 
 // Site Branding
 @import "honeybadger.less";
@@ -47,12 +49,12 @@ section.col-sm-12 {
   background-color: whitesmoke;
 }
 div[role=main]>div.row {
-  background-color: @brand-primary;
+  background-color: @brand-secondary;
   @media @wide {
-    background-image: url(../images/main_bg.jpg) no-repeat fixed top right;
+    background: @brand-secondary url(../images/main_bg_w.jpg) no-repeat fixed top right;
   }
   @media @normal {
-    background-image: url(../images/main_bg.jpg) no-repeat fixed top right;
+    background: @brand-secondary url(../images/main_bg_n.jpg) no-repeat fixed top right;
   }
 }
 

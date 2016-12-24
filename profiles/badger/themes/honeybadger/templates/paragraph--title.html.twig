@@ -7,7 +7,6 @@ has not yet been selected by the user.  H2 -> primary, H3 -> secondary etc.
 #}
 
 {% set hl = content.field_heading_level[0]['#markup'] %}
-{% set colorClass = "element--color-blue" %}
 
 {% if content.field_bg %}
 {%   set colorClass = content.field_bg[0]['#markup'] %}
@@ -33,6 +32,8 @@ has not yet been selected by the user.  H2 -> primary, H3 -> secondary etc.
   'paragraph',
   'paragraph--type--title',
   'paragraph--view-mode--default',
+  'element',
+  'element--color',
   colorClass,
 ]
 %}
