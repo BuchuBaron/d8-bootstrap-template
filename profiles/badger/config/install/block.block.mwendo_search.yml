@@ -1,0 +1,22 @@
+uuid: 44ad3273-ebba-4db6-9f28-59c3271a6428
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - mwendo
+_core:
+  default_config_hash: NFt0-zXL3z4Wo96leDyfgu8ctdi4D8ZDPcqyXbk-8nI
+id: mwendo_search
+theme: mwendo
+region: footer
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

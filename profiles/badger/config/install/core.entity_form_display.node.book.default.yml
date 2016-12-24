@@ -1,4 +1,4 @@
-uuid: 5edf9278-a4e3-42cf-b1c8-fbd1b530f05a
+uuid: 4dcf7019-9234-4da1-b0a3-aa85f5044aa9
 langcode: en
 status: true
 dependencies:
@@ -21,7 +21,8 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_paragraph:
-    weight: 31
+    type: entity_reference_paragraphs
+    weight: 0
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -29,7 +30,6 @@ content:
       add_mode: dropdown
       form_display_mode: default
     third_party_settings: {  }
-    type: entity_reference_paragraphs
   path:
     type: path
     weight: 30

@@ -14,13 +14,15 @@ dependencies:
     - paragraphs.paragraphs_type.title
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: 9mRACAWnZu95UlqJGcfF7hN6l8gsh_E04Mul6d6KtBQ
 id: node.page.field_paragraph
 field_name: field_paragraph
 entity_type: node
 bundle: page
 label: Paragraph
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -38,7 +40,7 @@ settings:
     target_bundles_drag_drop:
       title:
         enabled: true
-        weight: -16
+        weight: -15
       banner:
         enabled: true
         weight: -15

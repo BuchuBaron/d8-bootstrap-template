@@ -1,0 +1,20 @@
+uuid: a50471c2-ec5a-42f5-924c-c88304985ecb
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mwendo
+_core:
+  default_config_hash: SxescR8ReUQ1jKCxtISAStXcwc6JLw365pVX67352VA
+id: mwendo_page_title
+theme: mwendo
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

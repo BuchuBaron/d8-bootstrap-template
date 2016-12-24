@@ -5,12 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.comment
+    - field.field.node.article.field_paragraph
     - field.field.node.article.field_tags
     - node.type.article
   module:
     - user
 _core:
-  default_config_hash: U8ghxJXn8JE2p6Q2wLpPWAxpz4r_8crL1LxtapSrHAE
+  default_config_hash: J6Te6z8RoiyOx8LZFrr1sN3QT1KCrtbtukR15nlsvVw
 id: node.article.teaser
 targetEntityType: node
 bundle: article
@@ -27,4 +28,5 @@ content:
     weight: 100
 hidden:
   comment: true
+  field_paragraph: true
   field_tags: true

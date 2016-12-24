@@ -9,10 +9,10 @@ dependencies:
     - node.type.article
   module:
     - comment
-    - entity_reference_revisions
+    - paragraphs
     - path
 _core:
-  default_config_hash: 7CvVDwPYotAZFBa36mcpMKZOfVRRp_iGuPHpHaavI6E
+  default_config_hash: ITztk7mhw-ab2fj1PNPUBLxtFzK1N8pH-k3TtSmCmzM
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -20,43 +20,48 @@ mode: default
 content:
   comment:
     type: comment_default
-    weight: 20
+    weight: 7
     settings: {  }
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 4
     settings: {  }
     third_party_settings: {  }
   field_paragraph:
-    weight: 31
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+  field_tags:
+    type: entity_reference_autocomplete_tags
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_autocomplete
-  field_tags:
-    type: entity_reference_autocomplete_tags
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 8
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 5
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 6
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -67,7 +72,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
