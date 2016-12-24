@@ -1,0 +1,24 @@
+uuid: 95944275-e35b-4994-8394-db8aca44c428
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: KDpziVG0bNJ5PGlnnrNM3soSkARWfCe8vZ_SPMUZzUM
+id: default
+label: Book
+type: 'canonical_entities:node'
+pattern: '[node:book:parent:title]/[node:book:title]'
+selection_criteria:
+  8710da11-2781-4010-bffa-e775ca47121f:
+    id: node_type
+    bundles:
+      book: book
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8710da11-2781-4010-bffa-e775ca47121f
+selection_logic: and
+weight: -5
+relationships: {  }

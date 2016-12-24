@@ -1,0 +1,25 @@
+uuid: d427aa4e-3de7-48c6-a165-f4e0e7fa995b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.article.comment
+    - field.field.node.article.field_paragraph
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - user
+_core:
+  default_config_hash: HwmkVq0hOoXPLUPymPT9FWJTDRK0RwdTU_A9e5-IHA0
+id: node.article.rss
+targetEntityType: node
+bundle: article
+mode: rss
+content:
+  links:
+    weight: 100
+hidden:
+  comment: true
+  field_paragraph: true
+  field_tags: true

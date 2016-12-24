@@ -1,0 +1,22 @@
+uuid: 7dac275b-6d7e-4580-9e26-aae16a92c378
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - beginning
+_core:
+  default_config_hash: _Z91aQRTULq6lbLJtPK4NzcesDCJZX3Op-D4r0H4mB8
+id: beginning_powered
+theme: beginning
+region: header
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,37 @@
+cdn_provider: ''
+_core:
+  default_config_hash: tdGSCnJjCAmq7cG63tLFJto4N25iA0HiLEPki89L404
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: 'public://honeybadger.ico'
+  url: 'http://drupal8.dev/sites/honeybadger.net/files/honeybadger.ico'
+  use_default: false
+schemas:
+  bootstrap: 8000
+  honeybadger: 8000
+breadcrumb_home: 1
+fluid_container: 1
+image_shape: img-rounded
+table_responsive: '-1'
+table: ''
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+features:
+  comment_user_picture: true
+  comment_user_verification: false
+  favicon: true
+  node_user_picture: true
+logo:
+  path: 'public://badger_logo.png'
+  url: ''
+  use_default: false
+navbar_position: static-top
+navbar_inverse: 1

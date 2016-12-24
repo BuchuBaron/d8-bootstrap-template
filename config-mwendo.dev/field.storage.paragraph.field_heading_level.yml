@@ -1,0 +1,35 @@
+uuid: 56609c2c-ed2e-4dbb-a456-3512e446af10
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: pWPBv6GmXFHT6sMnopNrKtVJQEqHx58xEnLWm41kAuo
+id: paragraph.field_heading_level
+field_name: field_heading_level
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: h2
+      label: 'Heading 2'
+    -
+      value: h3
+      label: 'Heading 3'
+    -
+      value: h4
+      label: 'Heading 4'
+    -
+      value: h5
+      label: 'Heading 5'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

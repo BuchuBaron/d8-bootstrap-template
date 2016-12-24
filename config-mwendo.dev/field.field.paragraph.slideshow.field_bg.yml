@@ -1,0 +1,23 @@
+uuid: cdd8919e-9954-45ab-a249-71e85e4c72ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bg
+    - paragraphs.paragraphs_type.slideshow
+  module:
+    - options
+_core:
+  default_config_hash: D-yu_wlW5haTPIj3zoNBR01bC-tHZ6yNFfmT7v8UNOE
+id: paragraph.slideshow.field_bg
+field_name: field_bg
+entity_type: paragraph
+bundle: slideshow
+label: 'Background Colour'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

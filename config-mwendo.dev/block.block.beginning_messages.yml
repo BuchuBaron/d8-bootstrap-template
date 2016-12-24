@@ -1,0 +1,22 @@
+uuid: 80534461-8dff-4a1c-ac2b-ba2e7dcd15b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - beginning
+_core:
+  default_config_hash: KZhl7ZJoI6Hiy1NFGz95mgAFgZ1ze99Dx8TC3seZDAA
+id: beginning_messages
+theme: beginning
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

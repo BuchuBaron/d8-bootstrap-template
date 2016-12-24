@@ -1,0 +1,8 @@
+uuid: 838138c3-4392-4ad5-a354-da1ea2f9e016
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _qKhLJ7dFSWPNdGcNDna4U8jWOqrIBJcoX-cdaonM2Q
+id: multi_column
+label: Columns

@@ -1,0 +1,16 @@
+uuid: ee292a07-74ec-4e3f-b7b1-34bfa58d7dfb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: aggbwRi3Q3IAxDYkId09kXcCmbgAW_D5UZXbdqhYR9s
+name: banner1400
+label: Banner1400
+effects:
+  0e9fe344-7aa9-4b98-96b8-ed932e6c3a5b:
+    uuid: 0e9fe344-7aa9-4b98-96b8-ed932e6c3a5b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1400
+      height: 500

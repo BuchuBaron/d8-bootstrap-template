@@ -1,0 +1,8 @@
+uuid: 23b9007a-1671-42d5-833a-daf47de8ae75
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tafLNrf50W1FNiPodC68e3-ry4UNcl8_UjdQq5I6G38
+id: slideshow
+label: SlideShow

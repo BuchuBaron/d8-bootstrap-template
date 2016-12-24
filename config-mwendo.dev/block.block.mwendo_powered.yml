@@ -1,0 +1,22 @@
+uuid: e66da036-217a-451b-919e-1ee790480a92
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - mwendo
+_core:
+  default_config_hash: _Z91aQRTULq6lbLJtPK4NzcesDCJZX3Op-D4r0H4mB8
+id: mwendo_powered
+theme: mwendo
+region: '-1'
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

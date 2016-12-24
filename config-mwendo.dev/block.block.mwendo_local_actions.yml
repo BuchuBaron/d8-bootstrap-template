@@ -1,0 +1,20 @@
+uuid: 3d5671e3-7324-434b-9353-6cbf59a0ff8e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mwendo
+_core:
+  default_config_hash: siRrVRzFbuxLGcyAOSAFRlfOhoTiRyp0aylI-op37NY
+id: mwendo_local_actions
+theme: mwendo
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

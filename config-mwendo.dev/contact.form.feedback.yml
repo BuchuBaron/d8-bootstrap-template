@@ -1,0 +1,14 @@
+uuid: a6db6efc-0656-4d55-8a4d-a7e6136165f7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RtTsG-n_MaGcukF1y1oLVj5QnB6ht-hbVlaxhXeFcUA
+id: feedback
+label: 'Website feedback'
+recipients:
+  - charles@honeybadger.net
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

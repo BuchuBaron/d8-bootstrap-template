@@ -1,0 +1,49 @@
+uuid: 990216a6-347c-41c6-ad9e-aacb6c3309fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slideshow.field_bg
+    - field.field.paragraph.slideshow.field_sli
+    - field.field.paragraph.slideshow.field_slide
+    - field.field.paragraph.slideshow.field_wi
+    - paragraphs.paragraphs_type.slideshow
+  module:
+    - entity_reference_revisions
+    - options
+_core:
+  default_config_hash: xMfu4Jla9wxnaGjBvIkY6d_NXkKofu-4isnWEtPtOVY
+id: paragraph.slideshow.default
+targetEntityType: paragraph
+bundle: slideshow
+mode: default
+content:
+  field_bg:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+  field_sli:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+  field_slide:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_wi:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+hidden:
+  created: true
+  uid: true

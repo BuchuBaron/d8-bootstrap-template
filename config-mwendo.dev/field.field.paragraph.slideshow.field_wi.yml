@@ -1,0 +1,23 @@
+uuid: 6e3d658a-2bf0-45dc-97bf-5bdfaf9e1d4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wi
+    - paragraphs.paragraphs_type.slideshow
+  module:
+    - options
+_core:
+  default_config_hash: EIxEscpiGeord2S_50giOfcC-QrEHUiZQdRWk3Kemwc
+id: paragraph.slideshow.field_wi
+field_name: field_wi
+entity_type: paragraph
+bundle: slideshow
+label: 'Section Width'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

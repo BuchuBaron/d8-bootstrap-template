@@ -1,0 +1,25 @@
+uuid: d04d2c99-86d2-45f2-9d05-d66bcd2dc86c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.simple.field_text_paragraph
+    - paragraphs.paragraphs_type.simple
+  module:
+    - text
+_core:
+  default_config_hash: 9I6ojRQWoWT59OSTnVj5ijet7f6ZkRELb96hK2yOiNs
+id: paragraph.simple.default
+targetEntityType: paragraph
+bundle: simple
+mode: default
+content:
+  field_text_paragraph:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden:
+  created: true
+  uid: true

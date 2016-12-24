@@ -1,0 +1,35 @@
+uuid: b410b227-6b08-4baf-98f2-6c98502f6766
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.multi_column.field_bg
+    - field.field.paragraph.multi_column.field_paragraphs
+    - paragraphs.paragraphs_type.multi_column
+  module:
+    - entity_reference_revisions
+    - options
+_core:
+  default_config_hash: 9zn-ON_RcmIiAuGRvLCn3ZCaP0GSfnY7imR2T_SknDI
+id: paragraph.multi_column.default
+targetEntityType: paragraph
+bundle: multi_column
+mode: default
+content:
+  field_bg:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

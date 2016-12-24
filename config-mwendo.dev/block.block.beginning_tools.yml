@@ -1,0 +1,26 @@
+uuid: fe570518-a059-40b4-ab50-4c61be64d833
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - beginning
+_core:
+  default_config_hash: dGyxO2SjbyNgI_f6lv_C0Xr2EBM-ujgdSB7fGLyUYNI
+id: beginning_tools
+theme: beginning
+region: header
+weight: -4
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }
