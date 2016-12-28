@@ -48,6 +48,7 @@ dependencies:
   - paragraphs
   - color_field
   - pathauto
+  - insert_block
   # Additional
   - book
 themes:
