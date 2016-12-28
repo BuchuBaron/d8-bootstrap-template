@@ -49,6 +49,10 @@ div[role="heading"] a {
   background-color: yellow;
   color: #000000;
 }
+.element--color__black {
+  background-color: black;
+  color: #ffffff;
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -7528,6 +7532,9 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tra
 .element.element--color.element--color__yellow {
   background: #ffd400;
 }
+.element.element--color.element--color__black {
+  background: #222222;
+}
 /* If 2 of the same colors are in a row, this removes the top padding so there
    isn't twice as much padding as normal */
 .element.element--color + .element.element--color {
@@ -7696,10 +7703,9 @@ div[role=main] > div.row {
   }
 }
 .footer {
-  margin-top: 45px;
-  padding-top: 35px;
+  margin-top: 0;
+  padding-top: 0;
   padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5;
 }
 p:last-child,
 .form-group:last-child,
