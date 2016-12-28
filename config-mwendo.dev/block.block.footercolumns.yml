@@ -1,0 +1,25 @@
+uuid: 5f724fda-1302-4b3b-8de4-29d18a088ca3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:paragraph_block:86aad135-160a-4e39-a79c-8cbb50c40424'
+  module:
+    - block_content
+  theme:
+    - mwendo
+id: footercolumns
+theme: mwendo
+region: footer
+weight: -7
+provider: null
+plugin: 'block_content:86aad135-160a-4e39-a79c-8cbb50c40424'
+settings:
+  id: 'block_content:86aad135-160a-4e39-a79c-8cbb50c40424'
+  label: 'Footer Columns'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

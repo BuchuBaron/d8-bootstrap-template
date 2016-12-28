@@ -18,7 +18,7 @@ mode: default
 content:
   field_bg:
     weight: 1
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_key

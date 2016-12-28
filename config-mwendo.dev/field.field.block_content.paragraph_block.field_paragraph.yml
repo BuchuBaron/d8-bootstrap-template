@@ -1,9 +1,10 @@
-uuid: 546cc5a3-d7fe-42c3-b928-8d46f63620a0
+uuid: d090743e-5a46-4a7d-bd39-a720d662f587
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_paragraphs
+    - block_content.type.paragraph_block
+    - field.storage.block_content.field_paragraph
     - paragraphs.paragraphs_type.banner
     - paragraphs.paragraphs_type.downloads
     - paragraphs.paragraphs_type.multi_column
@@ -13,15 +14,13 @@ dependencies:
     - paragraphs.paragraphs_type.title
   module:
     - entity_reference_revisions
-_core:
-  default_config_hash: unb0Oi0k6j5i_1WThWu4dtn71b1bFP9W21EWDvTIHUo
-id: paragraph.multi_column.field_paragraphs
-field_name: field_paragraphs
-entity_type: paragraph
-bundle: multi_column
-label: 'Column Paragraphs'
+id: block_content.paragraph_block.field_paragraph
+field_name: field_paragraph
+entity_type: block_content
+bundle: paragraph_block
+label: Paragraph
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -30,8 +29,8 @@ settings:
   handler_settings:
     target_bundles:
       banner: banner
-      multi_column: multi_column
       downloads: downloads
+      multi_column: multi_column
       responsive_image: responsive_image
       simple: simple
       slideshow: slideshow
@@ -39,23 +38,23 @@ settings:
     target_bundles_drag_drop:
       banner:
         enabled: true
-        weight: 7
-      multi_column:
-        enabled: true
-        weight: 9
+        weight: 8
       downloads:
         enabled: true
         weight: 9
-      responsive_image:
+      multi_column:
         enabled: true
         weight: 10
-      simple:
+      responsive_image:
         enabled: true
         weight: 11
-      slideshow:
+      simple:
         enabled: true
         weight: 12
+      slideshow:
+        enabled: true
+        weight: 13
       title:
         enabled: true
-        weight: -15
+        weight: 14
 field_type: entity_reference_revisions

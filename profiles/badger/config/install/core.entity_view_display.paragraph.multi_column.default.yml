@@ -9,6 +9,8 @@ dependencies:
   module:
     - entity_reference_revisions
     - options
+_core:
+  default_config_hash: 9zn-ON_RcmIiAuGRvLCn3ZCaP0GSfnY7imR2T_SknDI
 id: paragraph.multi_column.default
 targetEntityType: paragraph
 bundle: multi_column
@@ -16,7 +18,7 @@ mode: default
 content:
   field_bg:
     weight: 1
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_key

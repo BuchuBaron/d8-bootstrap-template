@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.responsive_image
   module:
     - image
+_core:
+  default_config_hash: etRSNIDz7RjSeovrTubB5rUalmJqtl9W58locQ-mMFU
 id: paragraph.responsive_image.field_picture
 field_name: field_picture
 entity_type: paragraph

@@ -1,0 +1,8 @@
+uuid: 225f145e-5700-4d32-a7e4-b98e7e2f4fb8
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_block
+label: 'Paragraph Block'
+revision: 0
+description: 'Allows you to create a block using the site paragraphs.'

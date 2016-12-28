@@ -1,0 +1,48 @@
+uuid: 8e281951-8878-4527-9701-fb5dd1f3a54b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_block_background_colour
+field_name: field_block_background_colour
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'block--color element--color-brand_primary'
+      label: 'Brand Primary'
+    -
+      value: 'block--color element--color-brand_secondary'
+      label: 'Brand Secondary'
+    -
+      value: 'block--color element--color-brand_tertiary'
+      label: 'Brand Tertiary'
+    -
+      value: 'block--color element--color-brand_quaternary'
+      label: 'Brand Quaternary'
+    -
+      value: 'block--color element--color__black'
+      label: Black
+    -
+      value: 'block--color element--color__gray'
+      label: Grey
+    -
+      value: 'block--color element--color__white'
+      label: White
+    -
+      value: 'block--color element--color__blue'
+      label: Blue
+    -
+      value: 'block--color element--color__yellow'
+      label: Yellow
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

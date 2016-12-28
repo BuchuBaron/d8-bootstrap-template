@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.banner
   module:
     - image
+_core:
+  default_config_hash: CWkuiP2LSJFHRDfHHiLsi7OAruyGwxanb0QEwYVDy0U
 id: paragraph.banner.field_banner_image
 field_name: field_banner_image
 entity_type: paragraph

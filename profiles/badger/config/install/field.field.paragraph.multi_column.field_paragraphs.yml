@@ -13,11 +13,13 @@ dependencies:
     - paragraphs.paragraphs_type.title
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: unb0Oi0k6j5i_1WThWu4dtn71b1bFP9W21EWDvTIHUo
 id: paragraph.multi_column.field_paragraphs
 field_name: field_paragraphs
 entity_type: paragraph
 bundle: multi_column
-label: paragraphs
+label: 'Column Paragraphs'
 description: ''
 required: false
 translatable: false
@@ -55,5 +57,5 @@ settings:
         weight: 12
       title:
         enabled: true
-        weight: 16
+        weight: -15
 field_type: entity_reference_revisions

@@ -1,0 +1,21 @@
+uuid: f9256533-adc4-492f-8f3e-b0bd7696990d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.paragraph_block
+    - field.storage.block_content.field_block_background_colour
+  module:
+    - options
+id: block_content.paragraph_block.field_block_background_colour
+field_name: field_block_background_colour
+entity_type: block_content
+bundle: paragraph_block
+label: 'Block Background Colour'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

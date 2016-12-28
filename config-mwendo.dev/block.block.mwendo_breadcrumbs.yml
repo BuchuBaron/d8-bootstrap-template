@@ -1,6 +1,6 @@
 uuid: b3a43f54-2f02-4ea0-8598-1367e036f378
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: BkJs2-uplfw7Tgg6saqO3kZT9qjK8BoP_3NcYADBwCs
 id: mwendo_breadcrumbs
 theme: mwendo
-region: '-1'
-weight: -5
+region: footer
+weight: -6
 provider: null
 plugin: system_breadcrumb_block
 settings:

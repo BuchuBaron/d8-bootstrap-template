@@ -1,0 +1,37 @@
+uuid: 04cb3c6f-79de-4f96-8fa4-b47f38f67231
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_embed
+    - insert_block
+name: 'Block Inserts'
+format: block_inserts
+weight: 0
+filters:
+  entity_embed:
+    id: entity_embed
+    provider: entity_embed
+    status: true
+    weight: 0
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_insert_block:
+    id: filter_insert_block
+    provider: insert_block
+    status: true
+    weight: 0
+    settings:
+      check_roles: '1'

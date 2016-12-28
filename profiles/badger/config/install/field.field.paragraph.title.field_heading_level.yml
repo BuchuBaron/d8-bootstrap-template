@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.title
   module:
     - options
+_core:
+  default_config_hash: 598WGNiGNZ3zVsj-_v4AcarwWL8DE3A1kRK21hdn4i8
 id: paragraph.title.field_heading_level
 field_name: field_heading_level
 entity_type: paragraph

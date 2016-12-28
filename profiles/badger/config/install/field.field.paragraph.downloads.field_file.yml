@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.downloads
   module:
     - file
+_core:
+  default_config_hash: 3vQGqCJWjPeHWCwMr8BCFOu_Zc1IrDRL8anvY_Q6_RM
 id: paragraph.downloads.field_file
 field_name: field_file
 entity_type: paragraph

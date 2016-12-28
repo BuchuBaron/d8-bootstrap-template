@@ -13,6 +13,8 @@ dependencies:
     - paragraphs.paragraphs_type.title
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: eAa84f7wGQlmagzJ2aPdh74PGubSQ9M0An6WSrL9PRc
 id: paragraph.slideshow.field_slide
 field_name: field_slide
 entity_type: paragraph

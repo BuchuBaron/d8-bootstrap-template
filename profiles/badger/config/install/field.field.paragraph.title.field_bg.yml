@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.title
   module:
     - options
+_core:
+  default_config_hash: bRm_fHJ9LgXzuknFlA-Nj7gsy5ONVkOwBY2p3rqtNq8
 id: paragraph.title.field_bg
 field_name: field_bg
 entity_type: paragraph

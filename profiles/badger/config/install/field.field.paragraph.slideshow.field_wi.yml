@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.slideshow
   module:
     - options
+_core:
+  default_config_hash: EIxEscpiGeord2S_50giOfcC-QrEHUiZQdRWk3Kemwc
 id: paragraph.slideshow.field_wi
 field_name: field_wi
 entity_type: paragraph
