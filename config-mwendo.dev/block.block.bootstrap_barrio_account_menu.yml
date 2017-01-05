@@ -1,0 +1,26 @@
+uuid: 1da83f96-1879-40cb-bf03-9e1b82a77713
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: khq0BnUTtDqiJk_IPUYFEl4t1f2SbSlDpgXgy7i28jY
+id: bootstrap_barrio_account_menu
+theme: bootstrap_barrio
+region: top_header
+weight: -6
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

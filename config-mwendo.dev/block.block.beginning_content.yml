@@ -1,0 +1,22 @@
+uuid: 90abc189-e970-4b52-9977-9efbd308c23c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - beginning
+_core:
+  default_config_hash: l3w8POaiK_bq6gcywCcj3eOMDYROQK20ikpvgBor6do
+id: beginning_content
+theme: beginning
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

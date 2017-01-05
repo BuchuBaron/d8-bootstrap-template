@@ -1,0 +1,14 @@
+uuid: 7684b080-ebbc-44fd-b33e-02b15095d714
+langcode: en
+status: true
+dependencies: {  }
+name: banner980
+label: Banner980
+effects:
+  f54f1f8e-2a61-44f8-8aa5-d1bef55c7b19:
+    uuid: f54f1f8e-2a61-44f8-8aa5-d1bef55c7b19
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 980
+      height: 350

@@ -1,0 +1,21 @@
+uuid: 4df50e58-1470-4cda-9ae4-dd1db662b952
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bg
+    - paragraphs.paragraphs_type.downloads
+  module:
+    - options
+id: paragraph.downloads.field_bg
+field_name: field_bg
+entity_type: paragraph
+bundle: downloads
+label: 'Background Colour'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

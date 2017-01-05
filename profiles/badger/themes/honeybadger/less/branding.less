@@ -12,6 +12,46 @@
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 
+// Navbar colour overrides.
+@navbar-default-bg:                @brand-secondary;
+@navbar-default-color:             contrast(@navbar-default-bg);
+@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+
+// Navbar links.
+@navbar-default-link-color:                @navbar-default-color;
+@navbar-default-link-hover-color:          darken(contrast(@navbar-default-link-active-bg), 6.5%);
+@navbar-default-link-hover-bg:             darken(@navbar-default-link-active-bg, 6.5%);
+@navbar-default-link-active-color:         contrast(@navbar-default-link-active-bg);
+@navbar-default-link-active-bg:            @brand-quaternary;
+@navbar-default-link-disabled-color:       lighten(@navbar-default-link-color, 6.5%);
+@navbar-default-link-disabled-bg:          lighten(@navbar-default-bg, 6.5%);
+
+//=== Inverted navbar
+// Reset inverted navbar basics
+@navbar-inverse-color:                      lighten(@gray-light, 15%);
+@navbar-inverse-bg:                         #222;
+@navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
+
+// Inverted navbar links
+@navbar-inverse-link-color:                 lighten(@gray-light, 15%);
+@navbar-inverse-link-hover-color:           #fff;
+@navbar-inverse-link-hover-bg:              transparent;
+@navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
+@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
+@navbar-inverse-link-disabled-color:        #444;
+@navbar-inverse-link-disabled-bg:           transparent;
+
+// Inverted navbar brand label
+@navbar-inverse-brand-color:                @navbar-inverse-link-color;
+@navbar-inverse-brand-hover-color:          #fff;
+@navbar-inverse-brand-hover-bg:             transparent;
+
+// Inverted navbar toggle
+@navbar-inverse-toggle-hover-bg:            #333;
+@navbar-inverse-toggle-icon-bar-bg:         #fff;
+@navbar-inverse-toggle-border-color:        #333;
+
+
 // Branding colour assignments.
 div[role="heading"] {
   background-color: @brand-primary;
@@ -19,4 +59,39 @@ div[role="heading"] {
 }
 div[role="heading"] a {
   color: white;
+}
+.element--color-brand_primary {
+  background-color: @brand-primary;
+  color: contrast(@brand-primary);
+}
+.element--color-brand_secondary {
+  background-color: @brand-secondary;
+  color: contrast(@brand-secondary);
+}
+.element--color-brand_tertiary {
+  background-color: @brand-tertiary;
+  color: contrast(@brand-tertiary);
+}
+.element--color-brand_quaternary {
+  background-color: @brand-quaternary;
+  color: contrast(@brand-quaternary);
+}
+.element--color__blue {
+  background-color: blue;
+  color: contrast(blue);
+}
+.element--color__blue-light {
+  background-color: light blue;
+  color: contrast(light blue);
+}
+.element--color__gray {
+  background-color: gray;
+  color: contrast(gray);
+}
+.element--color__white {
+  background-color: white;
+}
+.element--color__yellow {
+  background-color: yellow;
+  color: contrast(yellow);
 }

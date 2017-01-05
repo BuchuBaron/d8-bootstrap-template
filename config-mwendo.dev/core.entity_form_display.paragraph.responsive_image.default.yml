@@ -1,0 +1,28 @@
+uuid: 4fa882bb-2e07-46eb-be0f-1448675feb5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.responsive_image.field_picture
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.responsive_image
+  module:
+    - image
+_core:
+  default_config_hash: i7ZpugPqnkTBzKnU0ROnfxFoM8-ILVVZdf8e2p-y-SQ
+id: paragraph.responsive_image.default
+targetEntityType: paragraph
+bundle: responsive_image
+mode: default
+content:
+  field_picture:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,22 @@
+uuid: d6e17179-c246-49a4-8049-2555192c13fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - beginning
+_core:
+  default_config_hash: NFt0-zXL3z4Wo96leDyfgu8ctdi4D8ZDPcqyXbk-8nI
+id: beginning_search
+theme: beginning
+region: header
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

@@ -22,6 +22,8 @@
 // Custom classes
 @import "paragraph-width-and-colour.less";
 @import "multi-column-paragraphs.less";
+@import "paragraph-title.less";
+@import "paragraph-text.less";
 
 // Site Branding
 @import "honeybadger.less";
@@ -34,8 +36,26 @@ ol, ul {
 }
 
 // Page header.
+div[role="heading"] {
+  z-index: 2000;
+}
 .page-header {
   margin-top: 0;
+}
+
+// Content and Background Image.
+section.col-sm-12 {
+  max-width: 840px;
+  background-color: whitesmoke;
+}
+div[role=main]>div.row {
+  background-color: @brand-secondary;
+  @media @wide {
+    background: @brand-secondary url(../images/main_bg_w.jpg) no-repeat fixed top right;
+  }
+  @media @normal {
+    background: @brand-secondary url(../images/main_bg_n.jpg) no-repeat fixed top right;
+  }
 }
 
 // Footer.
@@ -78,4 +98,7 @@ p:last-child,
 
 .navbar-brand {
   font-size: 2em;
+}
+.navbar {
+  margin-bottom: 0;
 }

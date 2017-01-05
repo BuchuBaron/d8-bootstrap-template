@@ -98,6 +98,14 @@ class ColorFieldType extends FieldItemBase {
           'description' => 'The color value',
           'type' => 'varchar',
           'length' => $color_length,
+=======
+    return array(
+      'columns' => array(
+        'color' => array(
+          'description' => 'The RGB hex values starting by the #',
+          'type' => 'varchar',
+          'length' => 7,
+>>>>>>> e96379e86a6e8bdd166b3ea9f4a16b54f4125b1c
           'not null' => FALSE,
         ),
         'opacity' => array(
@@ -239,5 +247,4 @@ class ColorFieldType extends FieldItemBase {
       $this->color = $color;
     }
   }
-
 }

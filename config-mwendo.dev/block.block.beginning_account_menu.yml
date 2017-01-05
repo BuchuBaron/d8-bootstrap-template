@@ -1,0 +1,26 @@
+uuid: 4f2ee984-4a37-4449-845a-23e2f008e477
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - beginning
+_core:
+  default_config_hash: khq0BnUTtDqiJk_IPUYFEl4t1f2SbSlDpgXgy7i28jY
+id: beginning_account_menu
+theme: beginning
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

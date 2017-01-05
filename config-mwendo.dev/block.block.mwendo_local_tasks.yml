@@ -1,0 +1,22 @@
+uuid: 6f0a57a1-94c2-4b30-ba05-0d4dc9c79553
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mwendo
+_core:
+  default_config_hash: LfGSaSZfzCBERFDbNv6W1neBC_WuNdd6dNWdxrQMMrA
+id: mwendo_local_tasks
+theme: mwendo
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

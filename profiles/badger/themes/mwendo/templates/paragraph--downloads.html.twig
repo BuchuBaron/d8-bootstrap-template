@@ -1,0 +1,14 @@
+{# Specify that we want to hide the content so we can print our fields individually #}
+{{ content|without('field_file','field_bg') }}
+
+{% set classes = [
+  'element',
+  'element--layout-downloads',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  content.field_bg ? content.field_bg[0]['#markup'],
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+    {{ content|without('field_bg') }}
+</div>

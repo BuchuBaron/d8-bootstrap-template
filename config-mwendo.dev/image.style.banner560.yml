@@ -1,0 +1,16 @@
+uuid: fca60fdd-9cf2-424d-8c46-4c9b2c4449ce
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: oxpaSHhkP-ppK639mP2M4x8j7JLQLlPw9w1n9PPt0Do
+name: banner560
+label: Banner560
+effects:
+  259373f6-239d-4fc6-99cf-36f987c41257:
+    uuid: 259373f6-239d-4fc6-99cf-36f987c41257
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 560
+      height: 200

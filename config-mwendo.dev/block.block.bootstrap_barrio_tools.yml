@@ -1,0 +1,26 @@
+uuid: f3e4ffd2-d0b1-456f-8089-2fecd35ec405
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: dGyxO2SjbyNgI_f6lv_C0Xr2EBM-ujgdSB7fGLyUYNI
+id: bootstrap_barrio_tools
+theme: bootstrap_barrio
+region: '-1'
+weight: -4
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

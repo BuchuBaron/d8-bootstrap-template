@@ -1,0 +1,14 @@
+uuid: 9a12f37a-40d9-4000-a405-f50220be0d34
+name: 'Mwendo Afrika'
+mail: charles@honeybadger.net
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: TbPb1vVZrUQZ-UnzmdBF4kYYV2AknNjHLeNLd37cH2Q

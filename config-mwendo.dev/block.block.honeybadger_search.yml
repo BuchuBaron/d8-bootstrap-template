@@ -1,0 +1,22 @@
+uuid: 575670e5-e2e9-4e43-8a34-a4705bce96b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - honeybadger
+_core:
+  default_config_hash: NFt0-zXL3z4Wo96leDyfgu8ctdi4D8ZDPcqyXbk-8nI
+id: honeybadger_search
+theme: honeybadger
+region: footer
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

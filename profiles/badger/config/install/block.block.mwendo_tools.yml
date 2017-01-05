@@ -1,0 +1,26 @@
+uuid: c0b1944a-35e7-4d87-a307-8cbc17d7693e
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - mwendo
+_core:
+  default_config_hash: dGyxO2SjbyNgI_f6lv_C0Xr2EBM-ujgdSB7fGLyUYNI
+id: mwendo_tools
+theme: mwendo
+region: '-1'
+weight: -5
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,55 @@
+uuid: 32000dbc-0b2e-48a0-a118-c597f36121bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.max_1300x1300
+    - image.style.max_2600x2600
+    - image.style.max_325x325
+    - image.style.max_650x650
+    - image.style.medium
+    - image.style.thumbnail
+  module:
+    - toolbar
+_core:
+  default_config_hash: WejUdirpWK_Nj6dT5gNbq3lRSILy3VdtrDfSW-4jEBY
+id: half_width
+label: 'Half width'
+image_style_mappings:
+  -
+    breakpoint_id: toolbar.wide
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 50vw
+      sizes_image_styles:
+        - large
+        - max_1300x1300
+        - max_2600x2600
+        - max_650x650
+  -
+    breakpoint_id: toolbar.standard
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - large
+        - max_1300x1300
+        - max_325x325
+        - max_650x650
+        - medium
+  -
+    breakpoint_id: toolbar.narrow
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - large
+        - max_325x325
+        - medium
+        - thumbnail
+breakpoint_group: toolbar
+fallback_image_style: max_650x650

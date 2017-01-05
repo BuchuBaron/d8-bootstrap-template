@@ -1,0 +1,43 @@
+{# Custom template to allow the Title Paragraph to have a separate heading
+   text field and heading level (and optional background colour).
+#}
+
+{# Set default colour background based on the heading, if a background colour
+has not yet been selected by the user.  H2 -> primary, H3 -> secondary etc.
+#}
+
+{% set hl = content.field_heading_level[0]['#markup'] %}
+
+{% if content.field_bg %}
+{%   set colorClass = content.field_bg[0]['#markup'] %}
+{% endif %}
+
+{% if (not content.field_bg) and (hl == 'h2') %}
+{%   set colorClass = 'element--color-brand_primary' %}
+{% endif %}
+
+{% if (not content.field_bg) and (hl == 'h3') %}
+{%   set colorClass = "element--color-brand_secondary" %}
+{% endif %}
+
+{% if (not content.field_bg) and (hl == 'h4') %}
+{%   set colorClass = "element--color-brand_tertiary" %}
+{% endif %}
+
+{% if (not content.field_bg) and (hl == 'h5') %}
+{%   set colorClass = "element--color-brand_quaternary" %}
+{% endif %}
+
+{% set classes = [
+  'paragraph',
+  'paragraph--type--title',
+  'paragraph--view-mode--default',
+  'element',
+  'element--color',
+  colorClass,
+]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+    <{{ hl }}>{{ content.field_heading_text[0]['#context']['value'] }}</{{ hl }}>
+</div>

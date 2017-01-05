@@ -1,0 +1,22 @@
+uuid: d595fb0d-e971-400f-849f-73ecfa786a12
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - honeybadger
+_core:
+  default_config_hash: g4Se7u5xn0qN4WV8uCi8XNHaWkYSvaenPzJpgS7YgY0
+id: honeybadger_help
+theme: honeybadger
+region: help
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

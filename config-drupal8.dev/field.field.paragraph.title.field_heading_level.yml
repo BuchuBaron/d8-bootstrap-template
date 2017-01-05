@@ -1,0 +1,23 @@
+uuid: dec7f962-e26b-4564-b9de-1ad1ef4f53ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading_level
+    - paragraphs.paragraphs_type.title
+  module:
+    - options
+id: paragraph.title.field_heading_level
+field_name: field_heading_level
+entity_type: paragraph
+bundle: title
+label: Heading_level
+description: 'The level of the heading on the page.  The page title is H1, any subheadings below that are H2.  Sublevels of H2 are H3.  Choose the heading level based on the structure of your document, not how you want it to look.'
+required: true
+translatable: false
+default_value:
+  -
+    value: h2
+default_value_callback: ''
+settings: {  }
+field_type: list_string

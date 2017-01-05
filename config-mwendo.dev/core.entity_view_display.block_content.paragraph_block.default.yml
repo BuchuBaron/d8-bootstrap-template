@@ -1,0 +1,31 @@
+uuid: 399e4ba6-d08e-4389-bbba-6491971e4983
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.paragraph_block
+    - field.field.block_content.paragraph_block.field_block_background_colour
+    - field.field.block_content.paragraph_block.field_paragraph
+  module:
+    - entity_reference_revisions
+    - options
+id: block_content.paragraph_block.default
+targetEntityType: block_content
+bundle: paragraph_block
+mode: default
+content:
+  field_block_background_colour:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+  field_paragraph:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+hidden: {  }

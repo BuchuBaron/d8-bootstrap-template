@@ -1,0 +1,8 @@
+uuid: 3f507373-4c99-4fce-a86e-08003c276883
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 93yTeNHkL1xUvQ2Cvm7NTbukKWbibYXIkuMrblZZ2uM
+id: responsive_image
+label: Images

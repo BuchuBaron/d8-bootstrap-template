@@ -1,0 +1,22 @@
+uuid: b9b49786-a398-4768-8748-f9f0f6f7c68a
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - beginning
+_core:
+  default_config_hash: g4Se7u5xn0qN4WV8uCi8XNHaWkYSvaenPzJpgS7YgY0
+id: beginning_help
+theme: beginning
+region: highlighted
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
