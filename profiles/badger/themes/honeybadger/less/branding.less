@@ -63,6 +63,9 @@ div[role="heading"] a {
 .element--color-brand_primary {
   background-color: @brand-primary;
   color: contrast(@brand-primary);
+  a {
+    color: contrast(@brand-primary, #444, #bbb);
+  }
 }
 .element--color-brand_secondary {
   background-color: @brand-secondary;
@@ -99,3 +102,5 @@ div[role="heading"] a {
   background-color: black;
   color: contrast(black);
 }
+
+/* vim: set et sw=2 ft=css ai: */

@@ -18,6 +18,9 @@ div[role="heading"] a {
   background-color: #015249;
   color: #ffffff;
 }
+.element--color-brand_primary a {
+  color: #bbbbbb;
+}
 .element--color-brand_secondary {
   background-color: #578c90;
   color: #000000;
@@ -53,6 +56,7 @@ div[role="heading"] a {
   background-color: black;
   color: #ffffff;
 }
+/* vim: set et sw=2 ft=css ai: */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
