@@ -14,60 +14,82 @@ div[role="heading"] {
 div[role="heading"] a {
   color: white;
 }
-.element--color-primary,
+.element--color-primary {
+  background: #015249;
+  color: #ecfffd;
+}
 .element--color-primary a {
   color: #55fdea;
-  background: #015249;
 }
-.element--color-secondary,
+.element--color-secondary {
+  background: #578c90;
+  color: #000000;
+}
 .element--color-secondary a {
   color: #000000;
-  background: #578c90;
 }
-.element--color-tertiary,
+.element--color-tertiary {
+  background: #77c9d4;
+  color: #000000;
+}
 .element--color-tertiary a {
   color: #12353a;
-  background: #77c9d4;
 }
-.element--color-quaternary,
+.element--color-quaternary {
+  background: #a5a5af;
+  color: #000000;
+}
 .element--color-quaternary a {
   color: #28282d;
-  background: #a5a5af;
 }
-.element--color-red,
+.element--color-red {
+  background: #ff0000;
+  color: #ffffff;
+}
 .element--color-red a {
   color: #ffffff;
-  background: #ff0000;
 }
-.element--color-yellow,
+.element--color-yellow {
+  background: #ffff00;
+  color: #000000;
+}
 .element--color-yellow a {
   color: #000000;
-  background: #ffff00;
 }
-.element--color-green,
+.element--color-green {
+  background: #00ff00;
+  color: #000000;
+}
 .element--color-green a {
   color: #000000;
-  background: #00ff00;
 }
-.element--color-blue,
+.element--color-blue {
+  background: #0000ff;
+  color: #ffffff;
+}
 .element--color-blue a {
   color: #ffffff;
-  background: #0000ff;
 }
-.element--color-white,
+.element--color-white {
+  background: #ffffff;
+  color: #333333;
+}
 .element--color-white a {
   color: #808080;
-  background: #ffffff;
 }
-.element--color-grey,
+.element--color-grey {
+  background: #999999;
+  color: #000000;
+}
 .element--color-grey a {
   color: #191919;
-  background: #999999;
 }
-.element--color-black,
+.element--color-black {
+  background: #000000;
+  color: #cccccc;
+}
 .element--color-black a {
   color: #808080;
-  background: #000000;
 }
 /* vim: set et sw=2 ft=css ai: */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1186,7 +1208,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857143;
-  background-color: #ffffff;
+  background-color: #015249;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -5049,7 +5071,7 @@ a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #ffffff;
+  background-color: #015249;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
