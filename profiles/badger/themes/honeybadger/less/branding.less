@@ -78,8 +78,8 @@ div[role="heading"] a {
   @colour: extract(@colours, @i); 
   @darker: darken(@@colour, 50%); 
   @lighter: lighten(@@colour, 50%); 
-  .element--colour-@{colour},
-  .element--colour-@{colour} a {
+  .element--color-@{colour},
+  .element--color-@{colour} a {
     color: contrast(@@colour, @darker, @lighter);  
     background: @@colour;
   }
