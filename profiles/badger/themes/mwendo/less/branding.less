@@ -1,19 +1,29 @@
 /**
  * Brand colours and artifacts for a given site/customer.
  */
-@brand-primary:                    #155765; // Bluebell.
-@brand-secondary:                  #57652a; // Olive.
-@brand-tertiary:                   #ab9353; // Ornate.
-@brand-quaternary:                 #4d2c3d; // Plum.
+@primary:                    #155765; // Bluebell.
+@secondary:                  #57652a; // Olive.
+@tertiary:                   #ab9353; // Ornate.
+@quaternary:                 #4d2c3d; // Plum.
+@red:                        #f00;
+@yellow:                     #ff0;
+@green:                      #0f0;
+@blue:                       #00f;
+@white:                      #fff;
+@grey:                       #999;
+@black:                      #000;
+
+@colours: primary, secondary, tertiary, quaternary, ~'red', ~"yellow", ~"green", ~"blue", ~"white", ~"grey", ~"black";
 
 // Overrides from bootstrap.
-@brand-success:         @brand-secondary;
-@brand-info:            @brand-tertiary;
+@brand-primary:         @primary;
+@brand-success:         @secondary;
+@brand-info:            @tertiary;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 
 // Navbar colour overrides.
-@navbar-default-bg:                @brand-secondary;
+@navbar-default-bg:                @secondary;
 @navbar-default-color:             contrast(@navbar-default-bg);
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 
@@ -22,7 +32,7 @@
 @navbar-default-link-hover-color:          darken(contrast(@navbar-default-link-active-bg), 6.5%);
 @navbar-default-link-hover-bg:             darken(@navbar-default-link-active-bg, 6.5%);
 @navbar-default-link-active-color:         contrast(@navbar-default-link-active-bg);
-@navbar-default-link-active-bg:            @brand-quaternary;
+@navbar-default-link-active-bg:            @quaternary;
 @navbar-default-link-disabled-color:       lighten(@navbar-default-link-color, 6.5%);
 @navbar-default-link-disabled-bg:          lighten(@navbar-default-bg, 6.5%);
 
@@ -54,50 +64,28 @@
 
 // Branding colour assignments.
 div[role="heading"] {
-  background-color: @brand-primary;
-  color: contrast(@brand-primary);
+  background-color: @primary;
+  color: contrast(@primary);
 }
 div[role="heading"] a {
   color: white;
 }
-.element--color-brand_primary {
-  background-color: @brand-primary;
-  color: contrast(@brand-primary);
+
+// Use the branding colour and extra colour settings.
+// Mixin to iterate over colors and create CSS class for each one.
+.make-colour-classes(@i: length(@colours)) when (@i > 0) {
+  .make-colour-classes(@i - 1);
+  @colour: extract(@colours, @i); 
+  @darker: darken(@@colour, 50%); 
+  @lighter: lighten(@@colour, 50%); 
+  .element--color-@{colour} {
+    background: @@colour;
+    color: contrast(@@colour, darken(@darker, 30%), lighten(@lighter, 30%));
+    a {
+      color: contrast(@@colour, @darker, @lighter);
+    }
+  }
 }
-.element--color-brand_secondary {
-  background-color: @brand-secondary;
-  color: contrast(@brand-secondary);
-}
-.element--color-brand_tertiary {
-  background-color: @brand-tertiary;
-  color: contrast(@brand-tertiary);
-}
-.element--color-brand_quaternary {
-  background-color: @brand-quaternary;
-  color: contrast(@brand-quaternary);
-}
-.element--color__blue {
-  background-color: blue;
-  color: contrast(blue);
-}
-.element--color__blue-light {
-  background-color: light blue;
-  color: contrast(light blue);
-}
-.element--color__gray {
-  background-color: gray;
-  color: contrast(gray);
-}
-.element--color__white {
-  background-color: white;
-}
-.element--color__yellow {
-  background-color: yellow;
-  color: contrast(yellow);
-}
-.element--color__black {
-  background-color: black;
-  color: contrast(black);
-}
+.make-colour-classes(11);
 
 /* vim: set et sw=2 ft=css ai: */
