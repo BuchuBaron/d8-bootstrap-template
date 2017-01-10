@@ -13,19 +13,19 @@ has not yet been selected by the user.  H2 -> primary, H3 -> secondary etc.
 {% endif %}
 
 {% if (not content.field) and (hl == 'h2') %}
-{%   set colorClass = 'element--color-brand_primary' %}
+{%   set colorClass = 'element--color-primary' %}
 {% endif %}
 
 {% if (not content.field) and (hl == 'h3') %}
-{%   set colorClass = "element--color-brand_secondary" %}
+{%   set colorClass = "element--color-secondary" %}
 {% endif %}
 
 {% if (not content.field) and (hl == 'h4') %}
-{%   set colorClass = "element--color-brand_tertiary" %}
+{%   set colorClass = "element--color-tertiary" %}
 {% endif %}
 
 {% if (not content.field) and (hl == 'h5') %}
-{%   set colorClass = "element--color-brand_quaternary" %}
+{%   set colorClass = "element--color-quaternary" %}
 {% endif %}
 
 {% set classes = [
