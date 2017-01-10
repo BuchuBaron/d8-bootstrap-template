@@ -1,11 +1,11 @@
 {# Specify that we want to hide the content so we can print our fields individually #}
-{{ content|without('field_slide','field_sli', 'field_wi', 'field_bg') }}
+{{ content|without('field_slide','field_sli', 'field_wi', 'field_colour') }}
 {# In the normal Boostrap carousel markup, we add our conditional fields as classes: #}
 {# If Width field (field_wi) has value, add the class #}
-{# If Background Color field (field_bg) has value, add the class #}
+{# If Background Color field (field_colour) has value, add the class #}
 {# If Slide Interval field (field_sli) has value, add the data interval #}
 {# We also add the Paragraph's id as the carousel id so we can allow multiple carousel on one page. (paragraph.id.value)" #}
-<div class="element element--layout-slideshow carousel slide{% if content.field_wi %} {{content.field_wi[0]['#markup']}}{% endif %}{% if content.field_bg %} {{content.field_bg[0]['#markup']}}{% endif %}" id="myCarousel-{{ paragraph.id.value }}" data-ride="carousel"{% if content.field_sli %} data-interval="{{content.field_sli[0]['#markup']}}"{% endif %}>
+<div class="element element--layout-slideshow carousel slide{% if content.field_wi %} {{content.field_wi[0]['#markup']}}{% endif %}{% if content.field_colour %} {{content.field_colour[0]['#markup']}}{% endif %}" id="myCarousel-{{ paragraph.id.value }}" data-ride="carousel"{% if content.field_sli %} data-interval="{{content.field_sli[0]['#markup']}}"{% endif %}>
   {# For the carousel indicators, we loop through the slide field #}
   {# We use Twig loop.first to set the active class, and the key to set the data-slide-to #}
   {# Thanks to Jeff Burnz for the if key line: http://drupal.stackexchange.com/a/208765/13347 #}

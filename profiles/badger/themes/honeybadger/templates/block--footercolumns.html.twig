@@ -45,7 +45,7 @@
  * @see template_process()
  */
 #}
-{% set bgcolour_class = content.field_block_background_colour[0]['#markup'] %}
+{% set bgcolour_class = content.field_block_colour[0]['#markup'] %}
 {%
   set classes = [
     'block',
@@ -63,7 +63,7 @@
   {{ title_suffix }}
 
   {% block content %}
-    {{ content|without('field_block_background_colour') }}
+    {{ content|without('field_block_colour') }}
   {% endblock %}
 </section>
 

@@ -13,9 +13,10 @@
 @grey:                       #999;
 @black:                      #000;
 
-@colours: primary, secondary, tertiary, quaternary, ~"red", ~"yellow", ~"green", ~"blue", ~"white", ~"grey", ~"black";
+@colours: primary, secondary, tertiary, quaternary, ~'red', ~"yellow", ~"green", ~"blue", ~"white", ~"grey", ~"black";
 
 // Overrides from bootstrap.
+@brand-primary:         @primary;
 @brand-success:         @secondary;
 @brand-info:            @tertiary;
 @brand-warning:         #f0ad4e;
@@ -77,56 +78,12 @@ div[role="heading"] a {
   @colour: extract(@colours, @i); 
   @darker: darken(@@colour, 50%); 
   @lighter: lighten(@@colour, 50%); 
-  .element--colour-brand-@{colour},
-  .element--colour-brand-@{colour} a {
+  .element--colour-@{colour},
+  .element--colour-@{colour} a {
     color: contrast(@@colour, @darker, @lighter);  
+    background: @@colour;
   }
 }
-.make-colour-classes(5);
-
-/*
-.element--color-brand_primary {
-  background-color: @brand-primary;
-  color: contrast(@brand-primary);
-  a {
-    color: contrast(@brand-primary, #444, #bbb);
-  }
-}
-.element--color-brand_secondary {
-  background-color: @brand-secondary;
-  color: contrast(@brand-secondary);
-}
-.element--color-brand_tertiary {
-  background-color: @brand-tertiary;
-  color: contrast(@brand-tertiary);
-}
-.element--color-brand_quaternary {
-  background-color: @brand-quaternary;
-  color: contrast(@brand-quaternary);
-}
-.element--color__blue {
-  background-color: blue;
-  color: contrast(blue);
-}
-.element--color__blue-light {
-  background-color: light blue;
-  color: contrast(light blue);
-}
-.element--color__gray {
-  background-color: gray;
-  color: contrast(gray);
-}
-.element--color__white {
-  background-color: white;
-}
-.element--color__yellow {
-  background-color: yellow;
-  color: contrast(yellow);
-}
-.element--color__black {
-  background-color: black;
-  color: contrast(black);
-}
-*/
+.make-colour-classes(11);
 
 /* vim: set et sw=2 ft=css ai: */

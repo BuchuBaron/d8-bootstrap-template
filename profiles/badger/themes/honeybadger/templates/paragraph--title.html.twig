@@ -8,8 +8,8 @@ has not yet been selected by the user.  H2 -> primary, H3 -> secondary etc.
 
 {% set hl = content.field_heading_level[0]['#markup'] %}
 
-{% if content.field_bg %}
-{%   set colorClass = content.field_bg[0]['#markup'] %}
+{% if content.field_colour %}
+{%   set colorClass = content.field_colour[0]['#markup'] %}
 {% endif %}
 
 {% if (not content.field) and (hl == 'h2') %}
