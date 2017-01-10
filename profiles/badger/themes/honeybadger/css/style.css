@@ -7716,6 +7716,9 @@ div[role=main] > div.row {
 .footer.container-fluid {
   padding: 0;
 }
+#block-footerblock nav[role=navigation] {
+  margin-top: -2em;
+}
 p:last-child,
 .form-group:last-child,
 .panel:last-child {
