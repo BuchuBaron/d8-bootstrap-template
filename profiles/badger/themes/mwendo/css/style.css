@@ -14,45 +14,84 @@ div[role="heading"] {
 div[role="heading"] a {
   color: white;
 }
-.element--color-brand_primary {
-  background-color: #155765;
+.element--color-primary {
+  background: #155765;
   color: #ffffff;
 }
-.element--color-brand_secondary {
-  background-color: #57652a;
+.element--color-primary a {
+  color: #91d9e8;
+}
+.element--color-secondary {
+  background: #57652a;
   color: #ffffff;
 }
-.element--color-brand_tertiary {
-  background-color: #ab9353;
+.element--color-secondary a {
+  color: #d3deb0;
+}
+.element--color-tertiary {
+  background: #ab9353;
   color: #000000;
 }
-.element--color-brand_quaternary {
-  background-color: #4d2c3d;
-  color: #ffffff;
-}
-.element--color__blue {
-  background-color: blue;
-  color: #ffffff;
-}
-.element--color__blue-light {
-  background-color: light blue;
-  color: contrast(light #0000ff);
-}
-.element--color__gray {
-  background-color: gray;
+.element--color-tertiary a {
   color: #000000;
 }
-.element--color__white {
-  background-color: white;
-}
-.element--color__yellow {
-  background-color: yellow;
-  color: #000000;
-}
-.element--color__black {
-  background-color: black;
+.element--color-quaternary {
+  background: #4d2c3d;
   color: #ffffff;
 }
+.element--color-quaternary a {
+  color: #ceaabd;
+}
+.element--color-red {
+  background: #ff0000;
+  color: #ffffff;
+}
+.element--color-red a {
+  color: #ffffff;
+}
+.element--color-yellow {
+  background: #ffff00;
+  color: #000000;
+}
+.element--color-yellow a {
+  color: #000000;
+}
+.element--color-green {
+  background: #00ff00;
+  color: #000000;
+}
+.element--color-green a {
+  color: #000000;
+}
+.element--color-blue {
+  background: #0000ff;
+  color: #ffffff;
+}
+.element--color-blue a {
+  color: #ffffff;
+}
+.element--color-white {
+  background: #ffffff;
+  color: #333333;
+}
+.element--color-white a {
+  color: #808080;
+}
+.element--color-grey {
+  background: #999999;
+  color: #000000;
+}
+.element--color-grey a {
+  color: #191919;
+}
+.element--color-black {
+  background: #000000;
+  color: #cccccc;
+}
+.element--color-black a {
+  color: #808080;
+}
+/* vim: set et sw=2 ft=css ai: */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -1125,7 +1164,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #155765;
 }
 input,
 button,
@@ -1169,7 +1208,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.428571429;
-  background-color: #ffffff;
+  background-color: #155765;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -2329,7 +2368,7 @@ th {
   border-top: 2px solid #dddddd;
 }
 .table .table {
-  background-color: #ffffff;
+  background-color: #155765;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -4067,7 +4106,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #ffffff;
+  background-color: #155765;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -4113,7 +4152,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #ffffff;
+    border-bottom-color: #155765;
   }
 }
 .nav-pills > li {
@@ -4181,7 +4220,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #ffffff;
+    border-bottom-color: #155765;
   }
 }
 .tab-content > .tab-pane {
@@ -5032,7 +5071,7 @@ a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.428571429;
-  background-color: #ffffff;
+  background-color: #155765;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -7709,6 +7748,9 @@ div[role=main] > div.row {
 }
 .footer.container-fluid {
   padding: 0;
+}
+#block-footerblock nav[role=navigation] {
+  margin-top: -2em;
 }
 p:last-child,
 .form-group:last-child,
