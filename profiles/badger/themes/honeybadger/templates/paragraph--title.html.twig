@@ -12,19 +12,19 @@ has not yet been selected by the user.  H2 -> primary, H3 -> secondary etc.
 {%   set colorClass = content.field_colour[0]['#markup'] %}
 {% endif %}
 
-{% if (not content.field) and (hl == 'h2') %}
+{% if (not content.field_colour) and (hl == 'h2') %}
 {%   set colorClass = 'element--color-primary' %}
 {% endif %}
 
-{% if (not content.field) and (hl == 'h3') %}
+{% if (not content.field_colour) and (hl == 'h3') %}
 {%   set colorClass = "element--color-secondary" %}
 {% endif %}
 
-{% if (not content.field) and (hl == 'h4') %}
+{% if (not content.field_colour) and (hl == 'h4') %}
 {%   set colorClass = "element--color-tertiary" %}
 {% endif %}
 
-{% if (not content.field) and (hl == 'h5') %}
+{% if (not content.field_colour) and (hl == 'h5') %}
 {%   set colorClass = "element--color-quaternary" %}
 {% endif %}
 
