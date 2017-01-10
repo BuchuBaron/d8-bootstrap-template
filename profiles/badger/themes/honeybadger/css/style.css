@@ -14,58 +14,58 @@ div[role="heading"] {
 div[role="heading"] a {
   color: white;
 }
-.element--colour-primary,
-.element--colour-primary a {
+.element--color-primary,
+.element--color-primary a {
   color: #55fdea;
   background: #015249;
 }
-.element--colour-secondary,
-.element--colour-secondary a {
+.element--color-secondary,
+.element--color-secondary a {
   color: #000000;
   background: #578c90;
 }
-.element--colour-tertiary,
-.element--colour-tertiary a {
+.element--color-tertiary,
+.element--color-tertiary a {
   color: #12353a;
   background: #77c9d4;
 }
-.element--colour-quaternary,
-.element--colour-quaternary a {
+.element--color-quaternary,
+.element--color-quaternary a {
   color: #28282d;
   background: #a5a5af;
 }
-.element--colour-red,
-.element--colour-red a {
+.element--color-red,
+.element--color-red a {
   color: #ffffff;
   background: #ff0000;
 }
-.element--colour-yellow,
-.element--colour-yellow a {
+.element--color-yellow,
+.element--color-yellow a {
   color: #000000;
   background: #ffff00;
 }
-.element--colour-green,
-.element--colour-green a {
+.element--color-green,
+.element--color-green a {
   color: #000000;
   background: #00ff00;
 }
-.element--colour-blue,
-.element--colour-blue a {
+.element--color-blue,
+.element--color-blue a {
   color: #ffffff;
   background: #0000ff;
 }
-.element--colour-white,
-.element--colour-white a {
+.element--color-white,
+.element--color-white a {
   color: #808080;
   background: #ffffff;
 }
-.element--colour-grey,
-.element--colour-grey a {
+.element--color-grey,
+.element--color-grey a {
   color: #191919;
   background: #999999;
 }
-.element--colour-black,
-.element--colour-black a {
+.element--color-black,
+.element--color-black a {
   color: #808080;
   background: #000000;
 }
