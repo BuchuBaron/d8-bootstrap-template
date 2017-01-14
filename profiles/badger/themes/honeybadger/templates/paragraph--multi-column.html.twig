@@ -2,9 +2,9 @@
   'element',
   'element--layout-columns',
   'paragraph--type--' ~ paragraph.bundle|clean_class,
-  content.field_bg ? content.field_bg[0]['#markup'],
+  content.field_colour ? content.field_colour[0]['#markup'],
 ] %}
 <div{{ attributes.addClass(classes) }}>
-  {{ content|without('field_bg') }}
+  {{ content|without('field_colour') }}
 </div>
 <br clear="both" />
