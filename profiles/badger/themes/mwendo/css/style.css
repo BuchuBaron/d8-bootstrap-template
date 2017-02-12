@@ -7753,6 +7753,9 @@ p:last-child,
 .panel:last-child {
   margin-bottom: 0;
 }
+.paragraph--type--responsive-image img.img-responsive {
+  margin: 0 auto;
+}
 .region-help > .glyphicon {
   font-size: 18px;
   float: left;
