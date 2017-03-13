@@ -7696,6 +7696,13 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tra
 .paragraph--type--title {
   clear: both;
 }
+.paragraph--type--title.element {
+  padding: 15px;
+  padding-bottom: 12px;
+}
+.paragraph--type--title img:last-of-type {
+  margin-right: 1em;
+}
 /* -------------------------------------------------------------------------- */
 /* Adjust text paragraph styling.                                             */
 /* -------------------------------------------------------------------------- */
