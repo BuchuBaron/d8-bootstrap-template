@@ -41,18 +41,17 @@ has not yet been selected by the user.  H2 -> primary, H3 -> secondary etc.
 <div{{ attributes.addClass(classes) }}>
 
 {% if (content.field_heading_link) %}
-  {#  <a href="{{ content.field_heading_link[0]['#url'] }}"> #}
+  <a href="{{ content.field_heading_link[0]['#url'] }}">
 {% endif %}
 
 {% for key, item in content.field_thumbnail if key|first != '#' %}
-  {# {{ key }}: {{ kint(item['#file']['uri'][0]|keys) }} #}
-  <img src="{{ item['#file']['uri'][0].value|image_style('thumbnail') }}" style="float: left;vertical-align: middle;" />
+  <img src="{{ item['#file'].uri.0.value | image_style('thumbnail') }}" style="float: left;vertical-align: middle;padding-right: 10px" />
 {% endfor %}
 
-  &nbsp;<{{ hl }}>{{ content.field_heading_text[0]['#context']['value'] }}</{{ hl }}>
+<{{ hl }} style="margin: 30px">{{ content.field_heading_text[0]['#context']['value'] }}</{{ hl }}>
 
 {% if (content.field_heading_link) %}
-  {#  </a> #}
+     </a>
 {% endif %}
 
 </div>
